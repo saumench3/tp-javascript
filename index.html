@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="aa.css">
+</head>
+<body> 
+    <center><fieldset style="width: 150px; border-radius: 100px;">
+     <form action="#">
+           <label for="name" id="">Nombre y Apellido</label>
+           <br>
+           <input type="text" name="name" required placeholder="Ejm:Juan Perez" id="a5">
+           <br><br>
+           <label for="coreo">Email</label>
+           <br>
+           <marquee behavior="slide" direction="right" loop="1" onmouseover="document.getElementById('d2').play"><input type="email" name="coreo" required placeholder="Ejm: aguanteBoca@riverplate.com" id="a4"></marquee>
+           <br><br>
+           <label for="asunto">Asunto</label>
+           <br>
+           <marquee behavior="scroll" direction="left" loop="15"><input type="text" name="asunto" required placeholder="Ejm: venta de coca" id="a3"></marquee>
+           <br><br>
+           <label for="texto" >Mensaje</label>
+           <br>
+           <textarea name="texto" id="a2" placeholder="Ingrese su mensaje aqui" maxlength="500" rows="10" cols="50"></textarea>
+            <br>
+            <div class="" data-sitekey=""></div>
+            <br>
+           <button type="submit" id="a1">Enviar</button>
+<script>
+ const clickSound = new Audio("boca.mp3");
+
+ document.getElementById("a1").addEventListener("click", function () {
+    clickSound.play();
+ });
+</script>
+     </form>
+     </fieldset></center>
+</body>
+</html>
